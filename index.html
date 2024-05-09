@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Card Flip Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="./bg1.mp4" type="video/mp4">
+      </video>
+
+    <div class="game-container content">
+        <!-- Game Board (4x4 grid) -->
+        <div id="game-board">
+            <div class="row">
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+            </div>
+            <div class="row">
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+            </div>
+            <div class="row">
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+            </div>
+            <div class="row">
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+            </div>
+        </div>
+
+        <!-- Timer, Flip Count, and Flip Match Count -->
+        <div class="info-row">
+            <div class="info">Time: <span id="timer">30</span> seconds</div>
+            <div class="info">Flips: <span id="flip-count">0</span></div>
+            <div class="info">Matches: <span id="flip-match-count">0</span></div>
+        </div>
+
+        <!-- Refresh Button -->
+        <div class="refresh-container">
+            <button id="refresh-game">Restart Game</button>
+        </div>
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
